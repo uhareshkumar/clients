@@ -1,0 +1,135 @@
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 9vh;
+    margin: auto;
+    background-color:#f3e40b;
+}
+
+
+/* Header - logo */
+
+.logo {
+    display: flex;
+    cursor: pointer;
+}
+.logo img{
+    width: 150px;
+    height: 48px;
+}
+
+/* Hamburger menu */
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 20px;
+    height: 3px;
+    margin: 3px;
+    background-color: aliceblue;
+}
+
+/* Header - SearchBar */
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.searchBar input{
+    width: 50vw;
+}
+
+.searchBar .login{
+    justify-content: space-evenly;
+}
+
+/* NavBar */
+
+.navLinks{
+    align-items: center;
+    margin: auto; 
+    background-color: #fff567;
+}
+.navLinks ui {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 7vh;
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: large;
+    letter-spacing: 1.5px;
+    color: #0A79DF;
+}
+@media screen and (max-width:1024px) {
+    .searchBar {  
+        width: 75%;      
+    }
+}
+@media screen and (max-width:768px) {
+    header{
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 1vh auto 1vh auto;
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger {
+        position: absolute;
+        left:5%;
+        transform: translateX(-5%);
+        display: block;
+    }
+
+    .searchBar {  
+        width: 100%;
+        padding: 1vh; 
+        background-color: #f5ea58;     
+    }
+
+    .navLinks{
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 90%;
+        transform: translateX(-100%); 
+    }
+
+    .navLinks ui {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5vw;
+        height: 85%;
+        justify-content: space-evenly;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px,4.5px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px,-4.5px);
+}
