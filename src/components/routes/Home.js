@@ -1,18 +1,17 @@
+import '../components.css'
 import React from 'react';
-import {connect} from 'react-redux';
 
 class Home extends React.Component {
     render() {
         return(
-            <div>
-                Welcome to LowestEver
+            <div className="content" >
+                <div className="sub-header">
+                    Welcome to LowestEver
+                </div>
+                
             </div>
         );
     }
 }
 
-const mapStateToProps = (state) => {
-    return {auth: state.auth};
-};
-
-export default connect(mapStateToProps)(Home);
+export default Home;

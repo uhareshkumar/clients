@@ -68,9 +68,32 @@ header {
 .navLink {
     text-decoration: none;
     font-size: large;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     color: #0A79DF;
 }
+
+/* Routes */
+
+.content{
+    height: 90vh;
+    margin: 0 7vw 0 7vw;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.sub-header{
+    width: 100%;
+    min-height: 5vh;
+    font-size: 18px;
+    padding: 1.2vh;
+    box-shadow: rgb(211, 211, 235) 0 3px 0;
+    color: #fdfdfd;
+    background-color: #00c9fb;
+}
+
+.sub-content{
+    height: 10vh;
+}
+
 @media screen and (max-width:1024px) {
     .searchBar {  
         width: 75%;      
@@ -116,6 +139,9 @@ header {
         height: 85%;
         justify-content: space-evenly;
     }
+    .content{
+        margin: 0;
+    }
 }
 
 .nav-active {
@@ -133,3 +159,4 @@ header {
 .toggle .line3{
     transform: rotate(45deg) translate(-4px,-4.5px);
 }
+
