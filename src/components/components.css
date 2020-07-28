@@ -82,17 +82,42 @@ header {
 
 .sub-header{
     width: 100%;
+    padding: 1.2vh;
     min-height: 5vh;
     font-size: 18px;
-    padding: 1.2vh;
     box-shadow: rgb(211, 211, 235) 0 3px 0;
     color: #fdfdfd;
     background-color: #00c9fb;
+    cursor: pointer;
 }
 
 .sub-content{
-    height: 10vh;
+    height: 30vh;
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
 }
+
+.sub-content i{
+    font-size: 20px;
+    color: #00c9fb;
+    
+}
+
+.slider{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.card{    
+    
+    min-width: 100%;
+    background-color: rgb(211, 210, 206);    
+}
+
+
 
 @media screen and (max-width:1024px) {
     .searchBar {  
