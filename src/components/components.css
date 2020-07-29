@@ -104,6 +104,7 @@ header {
     color: #333333;
     z-index: 1;
     cursor: pointer;
+    text-shadow: 0 0 6px #fff;
 }
 
 #right{
