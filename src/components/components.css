@@ -92,16 +92,16 @@ header {
 }
 
 .sub-content{
-    min-height: 210px;
+    height: 210px;
     display: flex;
     margin-top: 4px;
     align-items: center;
     position: relative;
 }
 
-.sub-content button{
-    font-size: 20px;
-    color: #333;
+.sub-content #left,#right{
+    font-size: 30px;
+    color: #333333;
     z-index: 1;
     cursor: pointer;
 }
@@ -109,7 +109,6 @@ header {
 #right{
     position: absolute;
     right: 0;
-    color: #333;
 }
 
 .slider{
@@ -129,8 +128,8 @@ header {
 }
 
 .small-card{
-    min-width: 200px;
-    min-height: 200px;
+    width: 200px;
+    height: 200px;
     margin: 5px;
     background-color: #f3e40b;
 }
