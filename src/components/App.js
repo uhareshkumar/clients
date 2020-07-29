@@ -10,6 +10,7 @@ import HouseHolds from './routes/HouseHolds';
 import Kids from './routes/Kids';
 import Fashions from './routes/Fashions';
 import BuyingGuides from './routes/BuyingGuides';
+import Footer from './Footer';
 
 class App extends React.Component {
     render() {
@@ -25,7 +26,9 @@ class App extends React.Component {
                     <Route path="/households" component={HouseHolds} />
                     <Route path="/kids" component={Kids} />
                     <Route path="/fashions" component={Fashions} />
+                    <Footer />
                 </div>
+
             </MemoryRouter>
         );
     }

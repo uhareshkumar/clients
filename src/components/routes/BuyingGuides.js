@@ -3,8 +3,10 @@ import React from 'react';
 class BuyingGuides extends React.Component {
     render() {
         return(
-            <div>
-                BuyingGuides
+            <div className="content">
+                <div className="sub-header">
+                    Buying Guides
+                </div>
             </div>
         );
     }
